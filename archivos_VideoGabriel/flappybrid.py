@@ -24,7 +24,7 @@ event = Event()
 
 # window
 game_window = Tk()
-game_window.resizable(1,1)
+game_window.resizable(False,False)
 game_window.geometry("500x400")
 game_window.title("Flappybird On Python :D")
 game_window.config(bg="black")
@@ -95,7 +95,7 @@ def moving_pipes():
 def show_game_over():
     global game_window
     game_over_label = Label(game_window, text="PERDISTE :(", font=("Arial", 24), fg="red")
-    game_over_label.place(x=200, y=150)
+    game_over_label.place(x=130, y=150)
 
 def checking_collision():
     global game_over
